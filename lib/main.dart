@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learningdart/pages/first_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,29 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.deepPurple.shade100,
-        body: ListView(
-          scrollDirection: Axis.horizontal,
-          children: [
-            Container(
-              height: 350,
-              width: 350,
-              color: Colors.deepPurple.shade400,
-            ),
-            Container(
-              height: 350,
-              width: 350,
-              color: Colors.deepPurple.shade300,
-            ),
-            Container(
-              height: 350,
-              width: 350,
-              color: Colors.deepPurple.shade200,
-            ),
-          ],
-        ),
+      home: FirstPage(
+
       ),
+
     );
   }
 }
